@@ -106,6 +106,40 @@ require_once 'setting.php';
             </div>
         </div>
 
+
+        <div id="forTable2">
+            <table>
+                <tr>
+                    <th colspan="4"><span>До конца конкурса осталось:</span></th>
+                </tr>
+                <tr>
+                    <?php
+                    $now = new DateTime("now");
+                    $future = new DateTime("2017-09-25 08:00:00"); //Дата окончаная конкурс
+                    $interval = $now->diff($future);
+                    $days = $interval->format("%R%a");
+                    $days = substr($days , 1);
+                    $hours =  $interval->format("%R%H");
+                    $hours = substr($hours, 1);
+                    $minute =  $interval->format("%R%I");
+                    $minute = substr($minute,1);
+                    $second =  $interval->format("%R%S");
+                    $second = substr($second, 1);
+                    ?>
+                    <th class="fortable2_th"><?php echo $days ?></th>
+                    <th class="fortable2_th"><?php echo $hours ?></th>
+                    <th class="fortable2_th"><?php echo $minute ?></th>
+                    <th class="fortable2_th"><?php echo $second ?></th>
+                </tr>
+                <tr>
+                    <th>Дней</th>
+                    <th>Часов</th>
+                    <th>Минут</th>
+                    <th>Секунд</th>
+                </tr>
+            </table>
+        </div>
+
         <?php
         if (@!empty($_SESSION['USER_LOGIN_IN'])){
             echo '<div id="take_part">

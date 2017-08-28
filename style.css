@@ -9,45 +9,31 @@ body {
 #header {
     /*outline: 1px solid red;*/
     opacity: 0.9;
-    position: fixed;
+
     width: 100%;
     margin-top: -8px;
     background-color: white;
     margin-left: -10px;
-    min-height: 50px;
 }
 
 #but_down {
     position: fixed;
     bottom: 51px;
     left: 5px;
-
-}
-
-#logo {
-    width: 280px;
-    height: 58px;
-    margin-left: 10px;
-    float: left;
 }
 
 #navigation_menu {
     /*outline: 1px solid greenyellow;*/
-    float: right;
     min-width: 45%;
     margin-top: 4px;
-    height: 50px;
+    min-height: 50px;
 }
 
 #navigation_menu ul {
     padding-left: 0;
 }
 
-#navigation_menu ul li {
-    list-style: none;
-    display: inline;
-    margin-left: 3px;
-}
+
 
 #navigation_menu a {
     color: #8A8A8A;
@@ -64,10 +50,8 @@ body {
 
 #empty_place {
     background-color: white;
-
     margin-top: -8px;
     margin-left: -10px;
-    min-height: 50px;
 }
 
 /*
@@ -120,9 +104,9 @@ body {
 #update_timer {
     background-color: #2ea3f2;
     color: white;
-
     border-radius: 15px;
 }
+
 
 #forTable {
     /*outline: 1px solid red;*/
@@ -131,6 +115,17 @@ body {
     min-height: 100px;
 }
 
+#forTable2 {
+    background-color: #2ea3f2;
+    color: white;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+#forTable2 table{
+    width: 80%;
+    margin: auto;
+}
 #forTable table {
     /*border: 1px solid black;*/
     max-width: 60%;
@@ -337,12 +332,10 @@ h2.title {
 }
 
 .reg_box {
-    width: 50%;
     /*outline: 1px solid seagreen;*/
     margin: 0 auto;
     min-height: 200px;
     text-align: center;
-
 }
 
 .reg_box p {
@@ -387,7 +380,6 @@ h2.title {
 
 #reg_text_left {
     margin: 0 auto;
-    width: 50%;
     text-align: left;
 }
 
@@ -759,4 +751,70 @@ input.button:hover {
 .clear{
     clear: both;
     margin-bottom: 300px;
+}
+
+@media  screen and (max-width: 3000px) {
+    #logo {
+        width: 280px;
+        min-height: 58px;
+        margin-left: 10px;
+        float: left;
+    }
+    #logo img#logo_img{width: 100%;}
+    #header{min-height: 50px;position: fixed;}
+    #navigation_menu {float: right;}
+    #empty_place{min-height: 50px;}
+    #navigation_menu ul li {list-style: none;display: inline;margin-left: 3px;}
+    #forTable{display: block}
+    #forTable2{display: none;width: 50%;margin: 10px auto;min-height: 100px;}
+    #forTable2 table{font-size: 25px;font-family: "Comic Sans MS"; }
+    .fortable2_th{background-color: white; color: black}
+    .reg_box {width: 50%;}
+    #reg_text_left {width: 50%;}
+}
+@media screen and (max-width: 1020px){
+    #forTable{display: none}
+    #forTable2{display: block}
+}
+
+@media screen and (max-width: 870px){
+    #logo{
+        width: 200px;
+        height: 50px;
+    }
+    #logo img#logo_img{margin-top: 9px;}
+    #header{min-height: 40px;}
+    #forTable2 table{font-size: 22px; width: 95%}
+
+}
+
+@media screen and (max-width: 790px){
+    #logo{display: none}
+    #navigation_menu {float: left;}
+    #header{min-height: 30px;}
+    #empty_place{min-height: 40px;}
+    #forTable2{width: 70%;}
+    .reg_box{width: 70%}
+    #reg_text_left {width: 80%;}
+
+}
+
+@media screen and (max-width: 580px){
+    #navigation_menu{margin: auto; float: none; width: 50%; text-align: center}
+    #navigation_menu ul li {
+        list-style: none;
+        display: block;
+    }
+    #navigation_menu a{
+        margin: 5px 0;
+        padding: 2px 0;
+    }
+    #empty_place{min-height: 150px; display: none}
+    #header{position: relative}
+    #forTable2{width: 95%;}
+    #forTable2 table{font-size: 20px; width: 100%}
+}
+
+.clear_both{
+    clear: both;
 }
