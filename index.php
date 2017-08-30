@@ -1,6 +1,5 @@
 <?php
 $current_page = 0;
-
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -12,18 +11,14 @@ $current_page = 0;
 <title>Главная страница</title>
 </head>
 <body>
-
-
 <?php
 include "blocks/header.php";
 require_once 'setting.php';
 ?>
-
     <div id="imgWithTitle">
         <!-- <img src="images/ImageWithTitle.png"/> -->
         <img src="images/TheBattleforSevastopol3.png"/>
     </div>
-
     <div id="content">
         <H2>Косплей-конкурс <b>2017</b> уже начался!</H2>
         <div id="content_inside">

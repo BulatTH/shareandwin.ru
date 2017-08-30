@@ -12,7 +12,7 @@ $menu_array = array(
 
 <div id="header">
     <div id="logo">
-        <img src="images/Logo.png" />
+        <img id='logo_img' src="images/Logo.png" />
         <a href="#empty_place"><img src="images/Button_down_1.png" alt="but_down" width="50" id="but_down"/></a>
     </div>
     <div id="navigation_menu">
@@ -43,7 +43,9 @@ for ($i=0;$i<count($menu_array);$i++) {
 
 ?>
         </ul>
+        <div class="clear_both"></div>
     </div>
+
 
 </div>
 <div id="empty_place"></div>
