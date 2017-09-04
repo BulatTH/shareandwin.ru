@@ -33,8 +33,6 @@ body {
     padding-left: 0;
 }
 
-
-
 #navigation_menu a {
     color: #8A8A8A;
     font-size: 16px;
@@ -107,7 +105,6 @@ body {
     border-radius: 15px;
 }
 
-
 #forTable {
     /*outline: 1px solid red;*/
     max-width: 50%;
@@ -122,10 +119,11 @@ body {
     padding: 5px;
 }
 
-#forTable2 table{
+#forTable2 table {
     width: 80%;
     margin: auto;
 }
+
 #forTable table {
     /*border: 1px solid black;*/
     max-width: 60%;
@@ -718,17 +716,16 @@ input.button:hover {
     text-align: center;
 }
 
-
 .profile_info input:hover {
     -webkit-transform: scale(1.05);
     -ms-ransform: scale(1.05);
     transform: scale(1.05);
     border-bottom: 1px solid #0099FF;
-  /*  -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);*/
+    /*  -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);*/
 }
 
 .profile_info input:focus {
@@ -739,7 +736,7 @@ input.button:hover {
 }
 
 @keyframes spin {
-    from{
+    from {
         /*transform: rotate(0deg);*/
         border-bottom: 1px solid #0099FF;
     }
@@ -748,73 +745,213 @@ input.button:hover {
     }
 }
 
-.clear{
+.clear {
     clear: both;
     margin-bottom: 300px;
 }
 
-@media  screen and (max-width: 3000px) {
+@media screen and (max-width: 3000px) {
     #logo {
         width: 280px;
         min-height: 58px;
         margin-left: 10px;
         float: left;
     }
-    #logo img#logo_img{width: 100%;}
-    #header{min-height: 50px;position: fixed;}
-    #navigation_menu {float: right;}
-    #empty_place{min-height: 50px;}
-    #navigation_menu ul li {list-style: none;display: inline;margin-left: 3px;}
-    #forTable{display: block}
-    #forTable2{display: none;width: 50%;margin: 10px auto;min-height: 100px;}
-    #forTable2 table{font-size: 25px;font-family: "Comic Sans MS"; }
-    .fortable2_th{background-color: white; color: black}
-    .reg_box {width: 50%;}
-    #reg_text_left {width: 50%;}
-}
-@media screen and (max-width: 1020px){
-    #forTable{display: none}
-    #forTable2{display: block}
+
+    #logo img#logo_img {
+        width: 100%;
+    }
+
+    #header {
+        min-height: 50px;
+        position: fixed;
+    }
+
+    #navigation_menu {
+        float: right;
+    }
+
+    #empty_place {
+        min-height: 50px;
+    }
+
+    #navigation_menu ul li {
+        list-style: none;
+        display: inline;
+        margin-left: 3px;
+    }
+
+    #forTable {
+        display: block
+    }
+
+    #forTable2 {
+        display: none;
+        width: 50%;
+        margin: 10px auto;
+        min-height: 100px;
+    }
+
+    #forTable2 table {
+        font-size: 25px;
+        font-family: "Comic Sans MS";
+    }
+
+    .fortable2_th {
+        background-color: white;
+        color: black
+    }
+
+    .reg_box {
+        width: 50%;
+    }
+
+    #reg_text_left {
+        width: 50%;
+    }
 }
 
-@media screen and (max-width: 870px){
-    #logo{
+@media screen and (max-width: 4000px){
+    #contacts-info{
+        width: 70%;
+        margin: auto;
+        /*outline: 1px solid red;*/
+    }
+    #table2{display: none}
+    #table1{display: block}
+    #contacts-info table{width: 100%; margin-bottom: 30px; }
+    #contacts-info table tr th{width:35%; color: #6E6D6D; font-weight: normal; font-size: 18px;}
+    #contacts-info table tr#emails th{color: #4A4949; font-weight: bold; font-size: 20px; text-decoration: underline; padding-bottom: 5px; margin-bottom: 2px}
+
+    #contacts-info table tr#mobile th{color: #4A4949; font-weight: bold; font-size: 28px; margin-bottom: 2px; font-family: "Adobe Caslon Pro"}
+}
+
+@media screen and (max-width: 1020px) {
+    #forTable {
+        display: none
+    }
+
+    #forTable2 {
+        display: block
+    }
+}
+
+@media screen and (max-width: 875px) {
+    #contacts-info{
+        width: 100%;}
+    #logo {
         width: 200px;
         height: 50px;
     }
-    #logo img#logo_img{margin-top: 9px;}
-    #header{min-height: 40px;}
-    #forTable2 table{font-size: 22px; width: 95%}
+
+    #logo img#logo_img {
+        margin-top: 9px;
+    }
+
+    #header {
+        min-height: 40px;
+    }
+
+    #forTable2 table {
+        font-size: 22px;
+        width: 95%
+    }
 
 }
 
-@media screen and (max-width: 790px){
-    #logo{display: none}
-    #navigation_menu {float: left;}
-    #header{min-height: 30px;}
-    #empty_place{min-height: 40px;}
-    #forTable2{width: 70%;}
-    .reg_box{width: 70%}
-    #reg_text_left {width: 80%;}
+@media screen and (max-width: 790px) {
+    #logo {
+        display: none
+    }
+    #table1{display: none}
+    #table2{display: block}
+    #table2 span{display: block; margin: auto;width: 100%; text-align: center; padding: 3px}
+    #table2 span#title{color: #6E6D6D; font-weight: normal; font-size: 18px}
+    #table2 span#email{color: #4A4949; font-weight: bold; font-size: 20px; text-decoration: underline; margin-bottom: 15px}
+    #navigation_menu {
+        float: left;
+    }
+
+    #header {
+        min-height: 30px;
+    }
+
+    #empty_place {
+        min-height: 40px;
+    }
+
+    #forTable2 {
+        width: 70%;
+    }
+
+    .reg_box {
+        width: 70%
+    }
+
+    #reg_text_left {
+        width: 80%;
+    }
 
 }
 
-@media screen and (max-width: 580px){
-    #navigation_menu{margin: auto; float: none; width: 50%; text-align: center}
+@media screen and (max-width: 580px) {
+    #navigation_menu {
+        margin: auto;
+        float: none;
+        width: 50%;
+        text-align: center
+    }
+
     #navigation_menu ul li {
         list-style: none;
         display: block;
     }
-    #navigation_menu a{
+
+    #navigation_menu a {
         margin: 5px 0;
         padding: 2px 0;
     }
-    #empty_place{min-height: 150px; display: none}
-    #header{position: relative}
-    #forTable2{width: 95%;}
-    #forTable2 table{font-size: 20px; width: 100%}
+
+    #empty_place {
+        min-height: 150px;
+        display: none
+    }
+
+    #header {
+        position: relative
+    }
+
+    #forTable2 {
+        width: 95%;
+    }
+
+    #forTable2 table {
+        font-size: 20px;
+        width: 100%
+    }
 }
 
-.clear_both{
+.clear_both {
     clear: both;
 }
+
+#history-text, #history-text-2 {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    padding: 10px 0;
+}
+
+#history-text p {
+    font-size: 20px;
+    color: #6E6D6D;
+}
+
+#history-text-2 p {
+    color: #fff;
+}
+
+#maps iframe {
+    width: 100%;
+}
+
